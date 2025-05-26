@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Greenfield Academy</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Montserrat', Arial, sans-serif;
+            background: #f4f8fb;
+            color: #222;
+        }
+        header {
+            background: #2e7d32;
+            color: #fff;
+            padding: 30px 0 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+        }
+        nav {
+            margin-top: 15px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 18px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: #ffd600;
+        }
+        .hero {
+            background: url('https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+            color: #fff;
+            text-align: center;
+            padding: 90px 20px 100px 20px;
+            position: relative;
+        }
+        .hero::after {
+            content: "";
+            position: absolute;
+            left: 0; top: 0; right: 0; bottom: 0;
+            background: rgba(46,125,50,0.7);
+            z-index: 1;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .hero h2 {
+            font-size: 2.2rem;
+            margin-bottom: 18px;
+            font-weight: 700;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+        .hero a {
+            background: #ffd600;
+            color: #2e7d32;
+            padding: 12px 32px;
+            border-radius: 25px;
+            font-weight: 700;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: background 0.2s;
+        }
+        .hero a:hover {
+            background: #fff176;
+        }
+        .section {
+            padding: 60px 20px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 35px;
+            color: #2e7d32;
+            font-weight: 700;
+        }
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+        }
+        .feature {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+            padding: 30px 24px;
+            flex: 1 1 260px;
+            max-width: 320px;
+            text-align: center;
+        }
+        .feature h3 {
+            color: #388e3c;
+            margin-bottom: 12px;
+            font-size: 1.2rem;
+            font-weight: 700;
+        }
+        .feature p {
+            font-size: 1rem;
+            color: #444;
+        }
+        .about {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            align-items: center;
+            justify-content: center;
+        }
+        .about-img {
+            flex: 1 1 300px;
+            max-width: 350px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
+        .about-img img {
+            width: 100%;
+            display: block;
+        }
+        .about-text {
+            flex: 2 1 350px;
+            font-size: 1.1rem;
+            color: #333;
+        }
+        footer {
+            background: #2e7d32;
+            color: #fff;
+            text-align: center;
+            padding: 25px 10px;
+            font-size: 1rem;
+            margin-top: 40px;
+        }
+        @media (max-width: 900px) {
+            .features {
+                flex-direction: column;
+                align-items: center;
+            }
+            .about {
+                flex-direction: column;
+            }
+            .about-img, .about-text {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Greenfield Academy</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#features">Why Us</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Empowering Young Minds for a Brighter Tomorrow</h2>
+            <p>At Greenfield Academy, we nurture curiosity, creativity, and character in every learner. Join a vibrant community where education inspires growth and lifelong success.</p>
+            <a href="#contact">Enroll Now</a>
+        </div>
+    </section>
+
+    <section class="section" id="about">
+        <div class="section-title">About Us</div>
+        <div class="about">
+            <div class="about-img">
+                <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80" alt="Students learning">
+            </div>
+            <div class="about-text">
+                <p>
+                    Greenfield Academy is a forward-thinking school dedicated to academic excellence and holistic development. Our passionate educators foster a supportive environment where students are encouraged to explore, innovate, and achieve their full potential. We offer a rich curriculum, modern facilities, and a wide range of extracurricular activities to ensure every child thrives.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="features">
+        <div class="section-title">Why Choose Greenfield?</div>
+        <div class="features">
+            <div class="feature">
+                <h3>Innovative Curriculum</h3>
+                <p>Our programs blend traditional learning with modern approaches, preparing students for the challenges of tomorrow.</p>
+            </div>
+            <div class="feature">
+                <h3>Experienced Teachers</h3>
+                <p>Our dedicated faculty brings expertise and passion to every classroom, inspiring students to excel.</p>
+            </div>
+            <div class="feature">
+                <h3>Vibrant Community</h3>
+                <p>We celebrate diversity and foster a sense of belonging, ensuring every student feels valued and supported.</p>
+            </div>
+            <div class="feature">
+                <h3>Modern Facilities</h3>
+                <p>From science labs to sports fields, our campus is equipped to support learning, creativity, and growth.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="contact">
+        <div class="section-title">Contact Us</div>
+        <form style="max-width:500px;margin:0 auto;text-align:center;">
+            <input type="text" placeholder="Your Name" required style="width:90%;padding:10px;margin:8px 0;border-radius:5px;border:1px solid #ccc;">
+            <input type="email" placeholder="Your Email" required style="width:90%;padding:10px;margin:8px 0;border-radius:5px;border:1px solid #ccc;">
+            <textarea placeholder="Your Message" required style="width:90%;padding:10px;margin:8px 0;border-radius:5px;border:1px solid #ccc;height:80px;"></textarea>
+            <br>
+            <button type="submit" style="background:#2e7d32;color:#fff;padding:10px 28px;border:none;border-radius:20px;font-weight:700;cursor:pointer;">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        &copy; 2024 Greenfield Academy. All rights reserved.
+    </footer>
+</body>
+</html>
